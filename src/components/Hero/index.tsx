@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import { EdicaoHero } from './styles'
 
 function Hero() {

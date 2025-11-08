@@ -18,12 +18,16 @@ export const Estiloli = styled.li`
       color: var(--cor-principal);
     }
   }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 export const Estiloh3 = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
 `
-export const Estiloa = styled.a`
+export const EstiloA = styled.a`
   border-color: var(--cor-secundaria);
   background-color: var(--cor-principal);
   color: var(--cor-secundaria);
@@ -35,8 +39,4 @@ export const Estiloa = styled.a`
   font-size: 14px;
   border-radius: 8px;
   text-align: center;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
 `

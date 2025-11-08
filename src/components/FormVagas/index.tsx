@@ -1,16 +1,16 @@
-import React, { FormEvent, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { EdicaoFormV, Input, Botao } from './styles'
 
 type Props = {
-  children: (termo: string) => void
+  aoPesquisar: (termo: string) => void
 }
 
-const FormVagas = ({ children }: Props) => {
+const FormVagas = ({ aoPesquisar }: Props) => {
   const [termo, setTermo] = useState<string>('')
 
   const aoEnviarForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    children(termo.toLocaleLowerCase())
+    aoPesquisar(termo.toLocaleLowerCase())
   }
 
   return (
@@ -20,7 +20,7 @@ const FormVagas = ({ children }: Props) => {
         onChange={(e) => setTermo(e.target.value)}
         type="search"
       />
-      <Botao type="Submit">Pesquisar</Botao>
+      <Botao type="submit">Pesquisar</Botao>
     </EdicaoFormV>
   )
 }

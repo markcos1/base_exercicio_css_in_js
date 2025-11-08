@@ -1,4 +1,4 @@
-import { Estiloli, Estiloh3, Estiloa } from './styles'
+import { Estiloli, Estiloh3, EstiloA } from './styles'
 
 type Props = {
   titulo: string
@@ -22,7 +22,7 @@ const Vaga = (props: Props) => (
       </li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>
-    <Estiloa href="#"> Ver detalhes e candidatar-se </Estiloa>
+    <EstiloA href="#"> Ver detalhes e candidatar-se </EstiloA>
   </Estiloli>
 )
 

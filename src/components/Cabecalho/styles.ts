@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const EdicaoCabeca = styled.header`
-  background-color: --cor-secundaria
-  color: --cor-principal
-  text-align: center
-  padding: 24px 0
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  text-align: center;
+  padding: 24px 0;
 `
