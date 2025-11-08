@@ -1,14 +1,14 @@
-import Titulo from './components/Titulo'
-import ListaVagas from './containers/ListaVagas'
 import EstiloGlobal from './styles'
-import Heroi from './components/Hero'
+import Hero from './components/Hero'
+import Cabecalho from './components/Cabecalho'
+import ListaVagas from './containers/ListaVagas'
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-      <Titulo />
-      <Heroi />
+      <Cabecalho />
+      <Hero />
       <div className="container">
         <ListaVagas />
       </div>
