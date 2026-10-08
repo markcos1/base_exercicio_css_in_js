@@ -1,9 +1,9 @@
-import { Cabecalho as CabecalhoStyle } from './styles'
+import { Cabeca } from './styles'
 
 const Cabecalho = () => (
-  <CabecalhoStyle>
+  <Cabeca>
     <h1>EBAC Jobs</h1>
-  </CabecalhoStyle>
+  </Cabeca>
 )
 
 export default Cabecalho

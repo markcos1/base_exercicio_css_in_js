@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { cores } from '../../styled'
 
 export const FormularioHero = styled.form`
   height: 360px;
@@ -9,23 +10,23 @@ export const FormularioHero = styled.form`
   display: flex;
   align-items: center;
 
-  ::before {
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${(props) => props.theme.colors.corPrincipal};
+    background-color: ${cores.corPrincipal};
     content: '';
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
-  .div {
+  div {
     position: relative;
     color: #eee;
   }
 
-  .h2 {
+  h2 {
     font-family: Gloock, serif;
     font-size: 48px;
   }
@@ -34,7 +35,7 @@ export const FormularioHero = styled.form`
     height: auto;
     padding: 24px 0;
 
-    .h2 {
+    h2 {
       font-size: 32px;
     }
   }

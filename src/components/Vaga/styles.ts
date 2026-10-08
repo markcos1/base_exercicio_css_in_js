@@ -1,27 +1,28 @@
 import styled from 'styled-components'
+import { cores } from '../../styled'
 
 export const Vagacss = styled.li`
-  border: 1px solid ${(props) => props.theme.colors.corPrincipal};
-  background-color: ${(props) => props.theme.colors.corSecundaria};
-  color: ${(props) => props.theme.colors.corPrincipal};
+  border: 1px solid ${cores.corPrincipal};
+  background-color: ${cores.corSecundaria};
+  color: ${cores.corPrincipal};
   padding: 16px;
   transition: all ease 0.3s;
   border-radius: 8px;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.corPrincipal};
-    color: ${(props) => props.theme.colors.corSecundaria};
+    background-color: ${cores.corPrincipal};
+    color: ${cores.corSecundaria};
   }
 
-  .h3 {
+  h3 {
     font-weight: bold;
     margin-bottom: 16px;
   }
 
-  .a {
-    border-color: ${(props) => props.theme.colors.corPrincipal};
-    background-color: ${(props) => props.theme.colors.corPrincipal};
-    color: ${(props) => props.theme.colors.corSecundaria};
+  a {
+    border-color: ${cores.corPrincipal};
+    background-color: ${cores.corPrincipal};
+    color: ${cores.corSecundaria};
     display: inline-block;
     padding: 8px 16px;
     border-radius: 8px;
@@ -32,7 +33,7 @@ export const Vagacss = styled.li`
     text-align: center;
 
     &:hover {
-      background-color: ${(props) => props.theme.colors.corPrincipal};
+      background-color: ${cores.corPrincipal};
       color: var(--cor-principal);
     }
 
