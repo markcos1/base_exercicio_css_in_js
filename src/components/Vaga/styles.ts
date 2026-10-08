@@ -9,18 +9,13 @@ export const Vagacss = styled.li`
   transition: all ease 0.3s;
   border-radius: 8px;
 
-  &:hover {
-    background-color: ${cores.corPrincipal};
-    color: ${cores.corSecundaria};
-  }
-
   h3 {
     font-weight: bold;
     margin-bottom: 16px;
   }
 
   a {
-    border-color: ${cores.corPrincipal};
+    border-color: ${cores.corSecundaria};
     background-color: ${cores.corPrincipal};
     color: ${cores.corSecundaria};
     display: inline-block;
@@ -32,13 +27,19 @@ export const Vagacss = styled.li`
     font-size: 14px;
     text-align: center;
 
-    &:hover {
+    &::hover {
+      border-color: ${cores.corPrincipal};
       background-color: ${cores.corPrincipal};
-      color: var(--cor-principal);
+      color: ${cores.corSecundaria};
     }
 
     @media (max-width: 768px) {
       display: block;
     }
+  }
+
+  &::hover a {
+    background-color: ${cores.corPrincipal};
+    color: ${cores.corSecundaria};
   }
 `

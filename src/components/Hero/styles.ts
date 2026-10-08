@@ -18,7 +18,7 @@ export const FormularioHero = styled.form`
     height: 100%;
     background-color: ${cores.corPrincipal};
     content: '';
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   div {
